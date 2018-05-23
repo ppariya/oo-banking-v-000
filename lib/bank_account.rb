@@ -16,4 +16,9 @@ class BankAccount
     "Your balance is $#{self.balance}."
   end
 
+  def valid?
+    balance > 0
+  end
+    
+  
 end
