@@ -14,7 +14,7 @@ class Transfer
   end
 
   def execute_transaction
-    if sender.valid? && sender.balance >= amount
+    if sender.valid? && sender.balance > amount
       if status == "pending"
         sender.balance -= amount
         receiver.deposit(amount)
