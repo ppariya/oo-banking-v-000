@@ -20,7 +20,7 @@ class BankAccount
     if @balance > 0
       return true
     else
-      self.close_account
+      
       return false
     end
   end
