@@ -21,6 +21,7 @@ class BankAccount
       true
     else
       self.close_account
+      return false
     end
   end
 
